@@ -3,6 +3,31 @@
     padding: 0;
 }
 
+header {
+    
+}
+
+#header-nav {
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #062D58;
+    overflow: hidden;
+    height: 50px;
+}
+
+.nav-list,li {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
 /* Hero Section */
 
 .hero-container {
