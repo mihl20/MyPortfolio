@@ -3,29 +3,31 @@
     padding: 0;
 }
 
-header {
-    
-}
-
-#header-nav {
-    height: 50px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #062D58;
-    overflow: hidden;
-    height: 50px;
-}
-
-.nav-list,li {
-    display: inline;
-    color: white;
+#navbar {
+    width: 100%;
+    display: block;
     text-align: center;
-    padding: 15px 20px;
+    position: sticky;
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    background-color: #062D58;
+}
+
+#navbar ul li {
+    position: relative;
+    display: inline;
+}
+
+
+#navbar ul li a {
+    display: inline-block;
     text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
 }
 
 /* Hero Section */
@@ -34,12 +36,12 @@ ul {
     position: relative;
     width: 100%;
     top: 0;
-    left: 0; 
+    left: 0;
 }
 
 .hero {
     position: relative;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 0;
@@ -50,29 +52,37 @@ ul {
     z-index: 1;
     width: 20%;
     height: 20%;
-    top: 10%;
+    top: 2%;
     left: 15%;
     margin: 0 auto;
     text-align: center;
 
 }
 
-.self-img {  
+.self-img {
     border-radius: 50%;
     border: 3px solid #062D58;
-    width: 100%;    
+    width: 100%;
 }
 
 
 #name {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    font-weight: 700;  
-    padding: 10px 0; 
+    font-weight: 700;
+    padding: 10px 0;
 }
 
 #description {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 300;
+}
+
+/* About */
+
+.about-me {
+    background-image: url("images/background-main.png");
+    width: 100%;
+    height: 2000px;
 }
