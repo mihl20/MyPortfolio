@@ -3,31 +3,33 @@
     padding: 0;
 }
 
-#navbar {
-    width: 100%;
-    display: block;
-    text-align: center;
-    position: sticky;
-}
+/* Header */
 
-
-#navbar ul {
-    list-style-type: none;
+nav {
     background-color: #062D58;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 
-#navbar ul li {
-    position: relative;
-    display: inline;
-}
-
-
-#navbar ul li a {
-    display: inline-block;
-    text-decoration: none;
+nav a {
     color: white;
-    padding: 15px 30px;
-    font-size: 1.5em;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 1.4em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 /* Hero Section */
